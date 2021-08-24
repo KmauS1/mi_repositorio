@@ -1,0 +1,29 @@
+.footer{
+	background-color: $dark;
+	padding: .7rem;
+	text-align: center;
+
+	&__social{
+		padding-top: 2rem;
+		span{
+			@include text-format($secondary, $font-tittle, $medium-size, 700, uppercase);
+		}
+		a{
+			text-decoration: none;
+			margin: .4rem;
+			i{
+				color: gray;
+				font-size:$medium-size;
+				transition: all .4s;
+				&:hover{
+					color: $light;
+				}
+			}
+		}
+	}
+	&__rights{
+		p{
+			@include text-format($light, $font-paragraph, $small-size, 400, uppercase);
+		}	
+	}
+}

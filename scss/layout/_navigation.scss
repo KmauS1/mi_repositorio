@@ -25,7 +25,7 @@
 				height: 100%;
 			width: 100%;
 				@include flex(row, center);
-				@include text-format($secondary, $font-paragraph, $medium-size, 700, uppercase);
+				@include text-format($secondary, $font-tittle, $medium-size, 700, uppercase);
 				text-decoration: none;
 				padding:.5rem;
 				text-shadow: 0 0 10px $secondary;
@@ -41,4 +41,22 @@
 		height: 75px;
 	}
 	
+}
+
+.nav--vertical{
+	flex-direction: column;
+	height: auto;
+	padding: .5rem;
+	.nav__list{
+		.nav__item{
+			.nav__link{
+				color: gray;
+				text-shadow: none;
+				transition: all .4s;
+				&:hover{
+					color: $light;
+				}
+			}
+		}
+	}
 }
