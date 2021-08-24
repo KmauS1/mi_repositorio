@@ -1,0 +1,15 @@
+@mixin text-format($color, $font, $size, $weight, $transform){
+	color: $color;
+	font-size: $size;
+	font-family: $font;
+	font-weight: $weight;
+	text-transform: $transform;
+}
+
+@mixin flex($direction, $justify){
+	display: flex;
+	flex-direction: $direction;
+	justify-content: $justify;
+	align-items: center;
+	flex-wrap: nowrap;
+}

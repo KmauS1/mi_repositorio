@@ -1,0 +1,44 @@
+.nav{
+	$self: &;
+	@include flex(column, space-between);
+	position:sticky;
+	top: 0;
+	z-index: 10;
+	width: 100%;
+	background-color: $dark;
+
+	&__brand{
+		padding: .5rem;
+		#{$self}__logo{
+			width: 50px;
+		}
+
+	}
+	&__list{
+		@include flex(row, center);
+		height: 100%;
+		list-style: none;
+		#{$self}__item{
+			height: 100%;
+			width: 100%;
+			#{$self}__link{
+				height: 100%;
+			width: 100%;
+				@include flex(row, center);
+				@include text-format($secondary, $font-paragraph, $medium-size, 700, uppercase);
+				text-decoration: none;
+				padding:.5rem;
+				text-shadow: 0 0 10px $secondary;
+
+			}
+		}
+	}
+}
+
+@media screen and (min-width:768px) {
+	.nav{
+		flex-direction: row;
+		height: 75px;
+	}
+	
+}

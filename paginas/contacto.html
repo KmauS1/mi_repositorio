@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="../css/main.css">
+	<title>Contacto K-coaching</title>
+</head>
+
+<body>
+			<nav class="nav">
+		<div class="nav__brand">
+			<a href="../index.html">
+				<img class="nav__logo"src="../IMG/logoLoL.png" alt="logotipo">
+			</a>
+		</div>
+		<ul class="nav__list">
+			<li class="nav__item">
+				<a href="nosotros.html" class="nav__link">Nosotros</a>
+			</li>
+
+			<li class="nav__item">
+				<a href="avances.html" class="nav__link">Avances</a>
+			</li>
+
+			<li class="nav__item">
+				<a href="precios.html" class="nav__link">Precios</a>
+			</li>
+
+			<li class="nav__item">
+				<a href="contacto.html" class="nav__link">Contacto</a>
+			</li>
+		</ul>
+	</nav>
+
+	<section>
+		<h3>contacto</h3>
+		<form action="envio.php "method="post">
+			<fieldset>
+				<legend>Informacion personal</legend>
+			<label for="nombre">Nombre sin apellidos</label>
+			<input type="text" name="nombre" placeholder="Carlos"><br>
+			<label for="email">Correo electronico</label>
+			<input type="text"name="email"placeholder="correo@hotmail.com">
+
+		</fieldset>
+		<fieldset>
+			<legend>Informacion crucial</legend>
+		<label for="region">Selecciona tu región</label>	
+			<select name="region" id="region">
+				<option value="LAN">LAN</option>
+				<option value="LAS">LAS</option>
+				<option value="NA">NA</option>
+				<option value="EUW">EUW</option>
+				<option value="EUNE">EUNE</option>
+			</select>	<br>
+		<label for="div">Selecciona tu division</label>
+		<select name="div" id="div">
+			<option value="UNRANKED">UNRANKED</option>
+			<option value="BRONCEMENOS">BRONCE O MENOS</option>
+			<option value="PLATA">PLATA</option>
+			<option value="ORO">ORO</option>
+			<option value="PLATINO">PLATINO</option>
+			<option value="DIAMANTEMAS">DIAMANTE+</option>
+
+
+		</select> <br><br>
+
+		<label for="comentario">Dudas o comentarios o para pedir informacion a detalle escribela aqui</label><br>
+			<textarea name="comentario" id="comentario" cols="30" rows="10" placeholder="deja tu mensaje"></textarea>
+
+			<br><br>
+			<input type="reset" value="Cancelar">
+			<input type="submit"value="Enviar">
+
+		</fieldset>
+
+		</form>
+		
+	</section>
+
+	  <footer>
+    <h3 class="">Redes sociales</h3>
+    <a href="#">
+      <img src="../IMG/faceb.png" alt="siguenos en facebook"></a>
+
+      <a href="#">
+        <img  src="../IMG/discord.png" alt="unete a nuestra comunidad de discord">
+      </a>
+
+  </footer>
+
+	
+</body>
+</html>
