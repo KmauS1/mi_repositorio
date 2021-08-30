@@ -12,3 +12,26 @@ p{
 	font-family: $font-paragraph;
 	font-size: $small-size;
 }
+
+.contenido {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+}
+
+@media screen and (min-width:768px) {
+    .contenido  p {
+        width: 30%;
+    }
+    .contenido p:nth-child(2) {
+        align-self: center;
+    }
+    .contenido p:nth-child(3) {
+        align-self: flex-end;
+    }
+    .contenido p:nth-child(4) {
+        align-self: center;
+    }
+}
